@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Marvel_fan_page</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script language="Javascript" >
+function download(filename, text) {
+  var pom = document.createElement('a');
+  pom.setAttribute('href', 'data:text/plain;charset=utf-8,' + 
+
+encodeURIComponent(text));
+  pom.setAttribute('download', filename);
+
+  pom.style.display = 'none';
+  document.body.appendChild(pom);
+
+  pom.click();
+
+  document.body.removeChild(pom);
+}
+</script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <h1>Marvel<a href="#">Fan Page</a></h1>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="char.html">Characters</a></li>
+          <li class="current"><a href="support.html">Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+        <h3>Latest News</h3>
+        <h4>Hey there fellow fans!</h4>
+        <h5>2nd April 2019</h5>
+        <p>Avengers Endgame on 26Th April this year!<br /><a href="http://www.marvel.com">Read more</a></p>
+        </div>
+        <img class="paperclip" src="style/paperclip.png" alt="paperclip" />
+        <div class="sidebar">
+          <h3>Newsletter</h3>
+          <p>If you would like to receive our newletter, please enter your email address and click 'Subscribe'.</p>
+          <form method="post" action="#" id="subscribe">
+            <p style="padding: 0 0 9px 0;"><input class="search" type="text" name="email_address" value="your email address" onclick="javascript: document.forms['subscribe'].email_address.value=''" /></p>
+            <p><input class="subscribe" name="subscribe" type="submit" value="Subscribe" /></p>
+          </form>
+        </div>
+      </div>
+      <div id="content">
+        <h1>Contact Us</h1>
+        <p>Please show your support for the MCU by giving your basic details below. Be proud to join the MCU army!!!</p>
+        <form action="#"  method="post" onsubmit="download(this['name'].value, this['text'].value)">
+          <div class="form_settings">
+            <p><span>Name</span><input class="contact" type="text" name="name" value="" color=rgb(220,20,60) /></p>
+            <p><span>Email Address</span><input class="contact" type="text" name="null" value=""  color=rgb(220,20,60) /></p>
+            <p><span>Message</span><textarea class="contact textarea" rows="8" cols="50" name="text"  color=rgb(220,20,60)></textarea></p>
+              <input type="submit" value="Save it here first" style="float: right" >
+               <p><a href="thank.html" class="submit" type="submit" name="text" value="submit"  >Submit</a></p>
+          </div>
+        </form>
+        <p><br /><br />We will look forward to meeting with you all again. Till then, stay safe and support MARVEL!!</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
